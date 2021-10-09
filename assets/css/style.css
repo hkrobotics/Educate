@@ -138,11 +138,20 @@ header .nav__menu {
 .cards {
   display: flex;
   justify-content: space-between;
+  
+}
+
+.subject_cards{
+  height: 100vh;
+}
+
+.trending{
+  height: 100vh;
 }
 
 .trending h2{
   font-size: 3rem;
-  font
+  text-align: center;
 }
 
 .course_card img {
