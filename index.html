@@ -6,49 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Educate</title>
-  
+
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
- 
 
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-
-
   <header>
-    <div class="header__logo">
-      <i class="bx bxs-book-open"></i>
-      <h3>Educate</h3>
-    </div>
-    <div class="header__options__container">
-      <div class="header__options">
-        <ul>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Subject</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Trending</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Pricing</a>
-          </li>
-          <!-- <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
-          </li> -->
-        </ul>
-      </div>
-
-      <div class="header__buttons">
-        <button>Create Account</button>
-        <button>Login</button>
-        <button class="nav__menu"><i class="uil uil-bars"></i></button>
-      </div>
-    </div>
-
-    
+    <i class="bx bxs-book-open logo"></i> <h3>Educate</h3>
+    <nav>
+      <ul class="nav__links">
+        <li>
+          <a href="#" target="_blank">Subject</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Trending</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Pricing</a>
+        </li>
+        <!-- <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
+        </li> -->
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Login</button></a>
   </header>
 
   <hr class="header__hr" />
@@ -61,7 +46,7 @@
         Learn new skills from the comfort of your home of anywhere anytime.
       </p>
       <form action="#">
-        <input type="search" name="q" id="search" placeholder="Search..." />
+        <input type="text" name="q" id="search" placeholder="Search..." />
         <button>Start<i class="bx bx-right-arrow-alt"></i></button>
       </form>
     </div>
@@ -72,7 +57,7 @@
   </section>
 
   <section class="subject_cards">
-    <h2>🔥 Trending Courses</h2>
+    <h2>📚 Pick a Subject</h2>
     <div class="cards">
       <div class="cards__container">
         <i class="uil uil-flask"></i>
@@ -81,21 +66,21 @@
       </div>
       <div class="cards__container">
         <i class="uil uil-microscope"></i>
-        <h3>Chemistry</h3>
+        <h3>Biology</h3>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="cards__container">
         <i class="uil uil-calculator-alt"></i>
-        <h3>Chemistry</h3>
+        <h3>Maths</h3>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="cards__container">
         <i class="uil uil-brush-alt"></i>
-        <h3>Chemistry</h3>
+        <h3>Arts</h3>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
-  </section >
+  </section>
 
   <section class="trending">
     <h2>🔥 Trending Courses</h2>
@@ -165,6 +150,7 @@
   </section>
 
   <section class="pricing">
+    <h2>💸 Our Plans</h2>
     <div class="pricing__container">
       <div class="outer_card">
         <i class="uil uil-briefcase-alt"></i>
@@ -268,7 +254,7 @@
     <div class="footer__conatiner">
       <div class="footer__logo">
         <i class="bx bxs-book-open"></i>
-      <h3>Educate</h3>
+        <h3>Educate</h3>
       </div>
       <div class="footer__socials">
         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a>
@@ -276,13 +262,16 @@
         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-envelope"></i></a>
         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-whatsapp"></i></a>
       </div>
-      <div class="footer__copyright"><i class="uil uil-copyright"></i> hkrobotics | All Rights Reserved</div>
+      <div class="footer__copyright">
+        <i class="uil uil-copyright"></i> <p>hkrobotics | All Rights Reserved</p>
+      </div>
     </div>
   </footer>
 
   <!-- bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

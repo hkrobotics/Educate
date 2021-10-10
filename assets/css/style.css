@@ -5,6 +5,12 @@
   --primary-font-color: #000;
   --primary-font-style: "Poppins";
   --primary-body-color: #fff;
+
+  --card-bg:#f0f8ff;
+  --card-hover-bg: #5fa9e9;
+  --card-hover-bg2: #d3cca3;
+
+  --primary-hover-color: rgb(44, 44, 44);
 }
 
 * {
@@ -20,66 +26,63 @@ body {
   margin: auto;
 }
 
-.header__logo {
+
+header li,a,button{
+  text-decoration: none;
+}
+
+header{
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 2rem;
+  padding: 10px 10px;
 }
 
-header ul {
-  display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  text-decoration: none;
+.logo{
+  cursor: pointer;
+  font-size: calc(16*3px);
+  margin-right: 10px;
 }
 
-header a {
-  text-decoration: none;
-  margin-right: 1rem;
+header h3{
+  cursor: pointer;
+  font-size: calc(16*3px);
+  margin-right: auto;
 }
 
-.header__buttons {
-  display: flex;
+.nav__links{
+  list-style: none;
+
 }
 
-header {
-  display: flex;
-  background-color: lavenderblush;
-  height: 5rem;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
+.nav__links li{
+display: inline-block;
+padding: 0px 20px;
+
 }
 
-header button {
-  background-color: #000;
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+  color:var(--primary-hover-color);
+  
+}
+
+header button{
+  padding: 9px 25px;
+  background-color: var(--primary-font-color);
   color: #fff;
-  border: #000 solid 2px;
-  border-radius: 4px;
-
-  margin-right: 1rem;
-  width: 8rem;
-  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
 }
 
-header .uil-bars {
-  color: #fff;
-  font-size: 1rem;
-}
-
-header .nav__menu {
-  width: 2rem;
-}
-
-.header__options__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.header__hr {
-  width: 90%;
-  margin: auto;
+header button:hover{
+  background-color: var(--primary-hover-color);
 }
 
 .hero h6 {
@@ -88,6 +91,23 @@ header .nav__menu {
 
 .hero h1 {
   font-size: 4rem;
+}
+
+.hero form{
+  margin-top: 1rem;
+  display: flex;
+  border: 1px solid var(--primary-font-color);
+  width: fit-content;
+  border-radius: 4px;
+}
+
+
+.hero button,input{
+  font-size: 1.5rem;
+  border: none;
+  background: var(--card-bg);
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 
 .hero {
@@ -111,8 +131,6 @@ header .nav__menu {
   width: 50%;
 }
 
-.hero button {
-}
 
 .cards__container {
   display: flex;
@@ -120,9 +138,18 @@ header .nav__menu {
   align-items: center;
   justify-content: space-between;
   width: 15rem;
-  background-color: aliceblue;
+  background-color: var(--card-bg);
   border-radius: 10px;
   padding: 0 2rem 1.5rem 2rem;
+  cursor: pointer;
+
+  transition: all 1s ease-out 0s;
+}
+
+.cards__container:hover {
+  background-color: var(--card-hover-bg);
+  transition: all 0.3s ease-in 0s;
+  
 }
 
 .cards__container i {
@@ -165,7 +192,7 @@ header .nav__menu {
   text-align: center;
 }
 
-.course_card img {
+.course_card img{
   width: 100%;
   transform: scale(1.2);
 }
@@ -176,8 +203,14 @@ header .nav__menu {
 }
 
 .course_card {
-  background-color: aliceblue;
+  background-color: var(--card-bg);
   padding: 0 1rem 1rem 1rem;
+  transition: all 1s ease-out 0s;
+  cursor:pointer;
+}
+.course_card:hover {
+  background-color: var(--card-hover-bg2);
+  transition: all 0.3s ease-in 0s;
 }
 
 .reviews {
@@ -189,6 +222,11 @@ header .nav__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.pricing h2{
+  font-size: 3rem;
+  text-align: center;
 }
 
 .pricing{
@@ -230,6 +268,7 @@ header .nav__menu {
   border-radius: 4px;
   width: 8rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .inner_card h3{
@@ -266,6 +305,7 @@ header .nav__menu {
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .footer__logo i{
@@ -283,7 +323,18 @@ header .nav__menu {
 .footer__copyright{
   display: flex;
   font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
+
+.footer__copyright p{
+  margin-left: 2px;
+  
+}
+
+
 @media screen and (max-width: 1080px) {
   .cards__container {
     width: 10rem;
@@ -291,6 +342,13 @@ header .nav__menu {
 
   .cards {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1496px) {
+  .course_card__container{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
