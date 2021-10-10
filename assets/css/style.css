@@ -22,6 +22,11 @@
 }
 
 body {
+  /* width: 80%; */
+  margin: auto;
+}
+
+section{
   width: 80%;
   margin: auto;
 }
@@ -119,7 +124,7 @@ header button:hover{
   width: 50%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   justify-content: center;
 }
 
@@ -131,24 +136,83 @@ header button:hover{
   width: 50%;
 }
 
+@media screen and (max-width: 1280px) {
+  .hero{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+  }
+
+  .hero__img img {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.hero__title {
+  width: 100%;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .cards__container {
+    /* width: 10rem; */
+  }
+
+  .cards {
+    
+  }
+}
+@media screen and (max-width: 1496px) {
+  .cards__container {
+    /* width: 10rem; */
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+
+}
+@media screen and (max-width: 800px) {
+  .cards__container {
+    /* width: 10rem; */
+    height: calc(16*16px);
+  }
+
+  .cards {
+    justify-content: center;
+    
+  }
+}
+
 
 .cards__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 15rem;
+  justify-content: space-evenly;
+  width: calc(18*16px);
   background-color: var(--card-bg);
-  border-radius: 10px;
-  padding: 0 2rem 1.5rem 2rem;
+  border-radius: 8px;
+  /* padding: 0 2rem 1.5rem 2rem; */
   cursor: pointer;
-
+  height: calc(23*16px);
+  
   transition: all 1s ease-out 0s;
+
+  margin: 1rem 1rem;
 }
 
 .cards__container:hover {
   background-color: var(--card-hover-bg);
   transition: all 0.3s ease-in 0s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   
 }
 
@@ -157,60 +221,86 @@ header button:hover{
 }
 .cards__container h3 {
   font-size: 2rem;
+  
 }
 .cards__container p {
   font-size: 1rem;
 }
 
+
 .cards {
   display: flex;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* width: 80%; */
   
 }
 
 .subject_cards{
-  height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 8rem auto;
+  width: 100%;
 }
 
 .subject_cards h2{
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
+
+
+
+
+
+
 .trending{
-  height: 100vh;
+
+  width: 100%;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 8rem auto;
 }
 
 .trending h2{
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 3rem;
+  
 }
 
 .course_card img{
   width: 100%;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .course_card {
-  width: 18rem;
-  border-radius: 10px;
-}
-
-.course_card {
+  
+  border-radius: 8px;
+  height: calc(23*16px);
+  width: calc(18*16px);
   background-color: var(--card-bg);
   padding: 0 1rem 1rem 1rem;
   transition: all 1s ease-out 0s;
   cursor:pointer;
+  margin: 1rem 1rem;
+
+  justify-content: space-around;
 }
+
+.course_card h3{
+margin-top: 1rem;
+}
+
 .course_card:hover {
   background-color: var(--card-hover-bg2);
   transition: all 0.3s ease-in 0s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .reviews {
@@ -221,23 +311,39 @@ header button:hover{
 .course_card__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* width: 80%; */
+  margin: auto;
+  flex-wrap: wrap;
 }
+
+
+
+
 
 .pricing h2{
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 3rem;
+  
 }
 
+
 .pricing{
-  height: 100vh;
-  display: flex;
+  /* height: 100vh; */
+ 
+
+  width: 100%;
+  display:flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 8rem auto;
 }
 .pricing__container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .outer_card {
@@ -245,7 +351,10 @@ header button:hover{
   display: flex;
   flex-direction: column;
   width: 20rem;
-  border-radius: 10px;
+  border-radius: 8px;
+
+  transition: all 1s ease-out 0s;
+  margin: 1rem 1rem;
   
 }
 
@@ -257,7 +366,8 @@ header button:hover{
 
 .inner_card {
   background-color: aliceblue;
-  border-radius: 10px;
+  border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
   padding: 1rem;
 }
 
@@ -293,11 +403,13 @@ header button:hover{
 
 .offer p {
   margin-left: 0.5rem;
+ 
 }
 
 .inner_card span {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .footer__logo{
@@ -335,15 +447,7 @@ header button:hover{
 }
 
 
-@media screen and (max-width: 1080px) {
-  .cards__container {
-    width: 10rem;
-  }
 
-  .cards {
-    flex-wrap: wrap;
-  }
-}
 
 @media screen and (max-width: 1496px) {
   .course_card__container{
