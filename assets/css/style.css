@@ -11,6 +11,8 @@
   --card-hover-bg2: #d3cca3;
 
   --primary-hover-color: rgb(44, 44, 44);
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -40,7 +42,7 @@ header{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 10%;
 }
 
 .logo{
@@ -104,6 +106,7 @@ header button:hover{
   border: 1px solid var(--primary-font-color);
   width: fit-content;
   border-radius: 4px;
+  
 }
 
 
@@ -113,6 +116,11 @@ header button:hover{
   background: var(--card-bg);
   border-radius: 4px;
   padding: 4px 8px;
+
+  display: flex;
+  align-items: center;
+
+  
 }
 
 .hero {
@@ -129,12 +137,10 @@ header button:hover{
 }
 
 .hero__img img {
-  width: 100%;
+  width: 600px;
 }
 
-.hero__img {
-  width: 50%;
-}
+
 
 @media screen and (max-width: 1280px) {
   .hero{
@@ -145,7 +151,7 @@ header button:hover{
   }
 
   .hero__img img {
-    width: 80%;
+    width: 50rem;
     margin: auto;
     display: flex;
 }
@@ -154,6 +160,50 @@ header button:hover{
   width: 100%;
 }
 
+}
+
+
+@media screen and (max-width: 1045px) {
+ 
+  .hero__img img {
+   width: 80%;
+ }
+ }
+
+ @media screen and (max-width: 850px) {
+  nav{
+    display: none;
+  }
+
+ }
+
+@media screen and (max-width: 550px) {
+  .hero__img img {
+    width: 100%;
+  }
+
+  header {
+    
+    padding: 10px 10px;
+}
+  
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .hero form{
+    align-self: center;
+  }
+
+  input#search {
+    width: 16rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
 }
 
 
@@ -383,6 +433,7 @@ border-bottom-left-radius: 8px;
 
 .inner_card h3{
   font-size: 2rem ;
+  text-align: justify;
 }
 
 
