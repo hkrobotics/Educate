@@ -1,285 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educate</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Educate</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
 
-  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <header>
-    <i class="bx bxs-book-open logo"></i> <h3>Educate</h3>
-    <nav>
-      <ul class="nav__links">
-        <li>
-          <a href="#subject_cards">Subject</a>
-        </li>
-        <li>
-          <a href="#trending">Trending</a>
-        </li>
-        <li>
-          <a href="#pricing">Pricing</a>
-        </li>
-        <!-- <li>
+  <body>
+    <header>
+      <i class="bx bxs-book-open logo"></i>
+      <h3>Educate</h3>
+      <nav>
+        <ul class="nav__links">
+          <li>
+            <a href="#subject_cards">Subject</a>
+          </li>
+          <li>
+            <a href="#trending">Trending</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <!-- <li>
           <a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
         </li> -->
-      </ul>
-    </nav>
-    <a class="cta" href="#"><button>Login</button></a>
-  </header>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Login</button></a>
+    </header>
 
-  <!-- <hr class="header__hr" /> -->
+    <!-- <hr class="header__hr" /> -->
 
-  <section class="hero">
-    <div class="hero__title">
-      <h6>LEARN & ACHIEVE</h6>
-      <h1>Find the right online tutor for You</h1>
-      <p>
-        Learn new skills from the comfort of your home of anywhere anytime.
-      </p>
-      <form action="#">
-        <input type="text" name="q" id="search" placeholder="Search..." />
-        <button id="search-btn">Start<i id="search-btn-arrow" class="bx bx-right-arrow-alt"></i></button>
-      </form>
-    </div>
-
-    <div class="hero__img">
-      <img src=".//assets/images/scene 14.png" alt="Online Class" />
-    </div>
-  </section>
-
-  <section class="subject_cards" id="subject_cards">
-    <h2>📚 Pick a Subject</h2>
-    <div class="cards">
-      <div class="cards__container">
-        <i class="uil uil-flask"></i>
-        <h3>Chemistry</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+    <section class="hero">
+      <div class="hero__title">
+        <h6>LEARN & ACHIEVE</h6>
+        <h1>Find the right online tutor for You</h1>
+        <p>
+          Learn new skills from the comfort of your home of anywhere anytime.
+        </p>
+        <form action="#">
+          <input type="text" name="q" id="search" placeholder="Search..." />
+          <button id="search-btn">
+            Start<i id="search-btn-arrow" class="bx bx-right-arrow-alt"></i>
+          </button>
+        </form>
       </div>
-      <div class="cards__container">
-        <i class="uil uil-microscope"></i>
-        <h3>Biology</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="cards__container">
-        <i class="uil uil-calculator-alt"></i>
-        <h3>Maths</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="cards__container">
-        <i class="uil uil-brush-alt"></i>
-        <h3>Arts</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="trending" id="trending">
-    <h2>🔥 Trending Courses</h2>
+      <div class="hero__img">
+        <img src=".//assets/images/scene 14.png" alt="Online Class" />
+      </div>
+    </section>
 
-    <div class="course_card__container">
-      <div class="course_card">
-        <img src="./assets/images/character 1.png" alt="" />
-        <h3>Web Dev Bootcamp</h3>
-
-        <div class="reviews">
-          <div class="rating">
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star-half-alt"></i>
-            <i class="uil uil-star"></i>
-          </div>
-          <p>125 <i class="uil uil-thumbs-up"></i></p>
+    <section class="subject_cards" id="subject_cards">
+      <h2>📚 Pick a Subject</h2>
+      <div class="cards">
+        <div class="cards__container">
+          <i class="uil uil-flask"></i>
+          <h3>Chemistry</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="cards__container">
+          <i class="uil uil-microscope"></i>
+          <h3>Biology</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="cards__container">
+          <i class="uil uil-calculator-alt"></i>
+          <h3>Maths</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="cards__container">
+          <i class="uil uil-brush-alt"></i>
+          <h3>Arts</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
-      <div class="course_card">
-        <img src="./assets/images/character 2.png" alt="" />
-        <h3>PCM for JEE</h3>
+    </section>
 
-        <div class="reviews">
-          <div class="rating">
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star-half-alt"></i>
-            <i class="uil uil-star"></i>
+    <section class="trending" id="trending">
+      <h2>🔥 Trending Courses</h2>
+
+      <div class="course_card__container">
+        <div class="course_card">
+          <img src="./assets/images/character 1.png" alt="" />
+          <h3>Web Dev Bootcamp</h3>
+
+          <div class="reviews">
+            <div class="rating">
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star-half-alt"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <p>125 <i class="uil uil-thumbs-up"></i></p>
           </div>
-          <p>125 <i class="uil uil-thumbs-up"></i></p>
         </div>
-      </div>
-      <div class="course_card">
-        <img src="./assets/images/character 6.png" alt="" />
-        <h3>React Bootcamp</h3>
+        <div class="course_card">
+          <img src="./assets/images/character 2.png" alt="" />
+          <h3>PCM for JEE</h3>
 
-        <div class="reviews">
-          <div class="rating">
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star-half-alt"></i>
-            <i class="uil uil-star"></i>
+          <div class="reviews">
+            <div class="rating">
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star-half-alt"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <p>125 <i class="uil uil-thumbs-up"></i></p>
           </div>
-          <p>125 <i class="uil uil-thumbs-up"></i></p>
         </div>
-      </div>
-      <div class="course_card">
-        <img src="./assets/images/character 7.png" alt="" />
-        <h3>Python Crash Course</h3>
+        <div class="course_card">
+          <img src="./assets/images/character 6.png" alt="" />
+          <h3>React Bootcamp</h3>
 
-        <div class="reviews">
-          <div class="rating">
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star"></i>
-            <i class="uis uis-star-half-alt"></i>
-            <i class="uil uil-star"></i>
+          <div class="reviews">
+            <div class="rating">
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star-half-alt"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <p>125 <i class="uil uil-thumbs-up"></i></p>
           </div>
-          <p>125 <i class="uil uil-thumbs-up"></i></p>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="course_card">
+          <img src="./assets/images/character 7.png" alt="" />
+          <h3>Python Crash Course</h3>
 
-  <section class="pricing" id="pricing">
-    <h2>💸 Our Plans</h2>
-    <div class="pricing__container">
-      <div class="outer_card">
-        <i class="uil uil-notes"></i>
-        <div class="inner_card">
-          <h3>Basic Version</h3>
-          <p><span>Free</span></p>
-
-          <button>Create Account</button>
-          <div class="offer__container">
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
+          <div class="reviews">
+            <div class="rating">
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star"></i>
+              <i class="uis uis-star-half-alt"></i>
+              <i class="uil uil-star"></i>
             </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-times-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-times-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-times-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
+            <p>125 <i class="uil uil-thumbs-up"></i></p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="outer_card">
-        <i class="uil uil-book-reader"></i>
-        <div class="inner_card">
-          <h3>Standard Version</h3>
-          <p>From <span>₹99</span>/mo</p>
+    <section class="pricing" id="pricing">
+      <h2>💸 Our Plans</h2>
+      <div class="pricing__container">
+        <div class="outer_card">
+          <i class="uil uil-notes"></i>
+          <div class="inner_card">
+            <h3>Basic Version</h3>
+            <p><span>Free</span></p>
 
-          <button>Create Account</button>
-          <div class="offer__container">
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
+            <button>Create Account</button>
+            <div class="offer__container">
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-times-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-times-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-times-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
             </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
+          </div>
+        </div>
+
+        <div class="outer_card">
+          <i class="uil uil-book-reader"></i>
+          <div class="inner_card">
+            <h3>Standard Version</h3>
+            <p>From <span>₹99</span>/mo</p>
+
+            <button>Create Account</button>
+            <div class="offer__container">
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-times-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-times-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
             </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-times-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-times-circle"></i>
-              <p>Online Tutoring</p>
+          </div>
+        </div>
+
+        <div class="outer_card">
+          <i class="uil uil-briefcase-alt"></i>
+          <div class="inner_card">
+            <h3>Premium Version</h3>
+            <p>From <span>₹499</span>/mo</p>
+
+            <button>Create Account</button>
+            <div class="offer__container">
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
+              <div class="offer">
+                <i class="uil uil-check-circle"></i>
+                <p>Online Tutoring</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="outer_card">
-        <i class="uil uil-briefcase-alt"></i>
-        <div class="inner_card">
-          <h3>Premium Version</h3>
-          <p>From <span>₹499</span>/mo</p>
-
-          <button>Create Account</button>
-          <div class="offer__container">
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-            <div class="offer">
-              <i class="uil uil-check-circle"></i>
-              <p>Online Tutoring</p>
-            </div>
-          </div>
+    <footer>
+      <div class="footer__conatiner">
+        <div class="footer__logo">
+          <i class="bx bxs-book-open"></i>
+          <h3>Educate</h3>
+        </div>
+        <div class="footer__socials">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="uil uil-instagram"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="uil uil-envelope"></i
+          ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><i class="uil uil-whatsapp"></i
+          ></a>
+        </div>
+        <div class="footer__copyright">
+          <i class="uil uil-copyright"></i>
+          <p>hkrobotics | All Rights Reserved</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="footer__conatiner">
-      <div class="footer__logo">
-        <i class="bx bxs-book-open"></i>
-        <h3>Educate</h3>
-      </div>
-      <div class="footer__socials">
-        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-envelope"></i></a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="uil uil-whatsapp"></i></a>
-      </div>
-      <div class="footer__copyright">
-        <i class="uil uil-copyright"></i> <p>hkrobotics | All Rights Reserved</p>
-      </div>
-    </div>
+      Embed Code
+      <iframe
+        width="100%"
+        height="650px"
+        frameborder="0"
+        src="https://hkrobotics.speedtestcustom.com"
+      ></iframe>
+    </footer>
 
-    Embed Code
-<iframe width="100%" height="650px" frameborder="0" src="https://hkrobotics.speedtestcustom.com"></iframe>
-
-  </footer>
-
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-</body>
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </body>
 </html>
